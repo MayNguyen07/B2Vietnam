@@ -1,6 +1,9 @@
-import React, { Component } from "react";
+import React from "react";
 import { Form, Col, CardColumns, Image, Button, Card} from "react-bootstrap";
 import './showList.css'
+import { Link } from "react-router-dom";
+
+
 function showLists() {
   return (
     <React.Fragment>
@@ -47,18 +50,19 @@ function showLists() {
 <div className="container"> 
     <CardColumns>
   <Card className=" personInfo">
-    <Image  className="text-center p-2"variant="top"src="https://picsum.photos/171/180" roundedCircle  />
+    <Image  className="text-center p-2"variant="top"src="https://picsum.photos/150/150" roundedCircle  />
     <Card.Body>
       <Card.Title>Name</Card.Title>
       <Card.Footer>
       <small className="text-muted"> 
       <p> Come from </p>
        <p> Experience </p></small>
+       <button> <Link to ="/infor"> learn More</Link></button>
     </Card.Footer>
     </Card.Body>
   </Card>
   <Card>
-    <Image  className="text-center p-3" variant="top"src="https://picsum.photos/171/180" roundedCircle  />
+    <Image  className="text-center p-3" variant="top"src="https://picsum.photos/151/150" roundedCircle  />
     <Card.Body>
       <Card.Title>Name</Card.Title>    
     
@@ -66,11 +70,12 @@ function showLists() {
       <small className="text-muted"> 
       <p> Come from </p>
        <p> Experience </p></small>
+       <button> learn More</button>
     </Card.Footer>
     </Card.Body>
   </Card>
   <Card>
-    <Image variant="top"src="https://picsum.photos/171/180" roundedCircle  />
+    <Image variant="top"src="https://picsum.photos/150/149" roundedCircle  />
     <Card.Body>
       <Card.Title>Name</Card.Title>    
     
@@ -78,11 +83,12 @@ function showLists() {
       <small className="text-muted"> 
       <p> Come from </p>
        <p> Experience </p></small>
+       <button> learn More</button>
     </Card.Footer>
     </Card.Body>
   </Card>
   <Card>
-    <Image variant="top"src="https://picsum.photos/171/180" roundedCircle  />
+    <Image variant="top"src="https://picsum.photos/149/150"roundedCircle  />
     <Card.Body>
       <Card.Title>Name</Card.Title>    
     
@@ -90,11 +96,12 @@ function showLists() {
       <small className="text-muted"> 
       <p> Come from </p>
        <p> Experience </p></small>
+       <button> learn More</button>
     </Card.Footer>
     </Card.Body>
   </Card>
   <Card>
-    <Image variant="top"src="https://picsum.photos/171/180" roundedCircle  />
+    <Image variant="top"src="https://picsum.photos/171/180" style={{ widht:'150px', height:'150px' }}roundedCircle  />
     <Card.Body>
       <Card.Title>Name</Card.Title>    
     
@@ -102,11 +109,12 @@ function showLists() {
       <small className="text-muted"> 
       <p> Come from </p>
        <p> Experience </p></small>
+       <button> learn More</button>
     </Card.Footer>
     </Card.Body>
   </Card>
   <Card>
-    <Image variant="top"src="https://picsum.photos/171/180" roundedCircle  />
+    <Image variant="top"src="https://picsum.photos/171/180"style={{ widht:'150px', height:'150px' }} roundedCircle  />
     <Card.Body>
       <Card.Title>Name</Card.Title>    
     
@@ -114,6 +122,7 @@ function showLists() {
       <small className="text-muted"> 
       <p> Come from </p>
        <p> Experience </p></small>
+       <button> learn More</button>
     </Card.Footer>
     </Card.Body>
   </Card>

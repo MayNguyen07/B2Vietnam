@@ -1,14 +1,17 @@
-import React, { Component } from 'react';
-import {Form, Col,Row,Image, Button} from "react-bootstrap";
-import './index.css'
-
-const showForm = () => {
+import React from 'react';
+import {Form, Col,Row,Image} from "react-bootstrap";
+import './formTranslaters.css'
+import { Link } from "react-router-dom";
+function showForm () {
+ 
+  
   return (
       <React.Fragment>
     <Row>
       {/* left side */}
       <Col className="left-form">
-        <Form>
+
+         <Form>
           <Form.Row>
             <Form.Group as={Col} controlId="formGridEmail">
               <Form.Label>Email</Form.Label>
@@ -48,7 +51,7 @@ const showForm = () => {
               <option> More than 5 years</option>
               <option></option>
             </Form.Control>
-          </Form.Group>
+          </Form.Group> 
 
           <Form.Group controlId="formGridAddress3">
             <Form.Label>Language</Form.Label>
@@ -56,10 +59,9 @@ const showForm = () => {
           </Form.Group>
           <Form.Group controlId="formGridAddress3">
             <Form.Label>Certificate</Form.Label>
-            <Form.Control placeholder="List your certificates" />
+            <Form.Control placeholder="List your certificates" /> 
           </Form.Group>
-
-        </Form>
+        </Form> 
       </Col>
 
 
@@ -74,7 +76,13 @@ const showForm = () => {
       </Col>
     </Row>
     <Row className="ButtonEdit">
-    <Button variant="primary">Save</Button>
+        <button variant="primary">
+    <Link  to ="/list"  size="lg" block>
+              save
+            </Link>
+            
+            
+</button>
     </Row>
     </React.Fragment>
   );
